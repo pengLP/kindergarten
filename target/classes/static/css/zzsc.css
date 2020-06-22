@@ -1,0 +1,170 @@
+*{padding:0;margin:0;}
+html,body{font-size:12px;font-family:"Î¢ÈíÑÅºÚ";outline:none;color:#666;background:#fff;}
+ul,ol{list-style:none;}
+img{border:none;outline:none;}
+a{color:#666;text-decoration:none;outline:none;}
+a:hover{color:#e8431f;}
+
+/*¸¡¶¯¿Í·þ*/
+#floatDivBoxs{width:200px;background: url(../images/gh.png) no-repeat; background-size:100% 100%;position:fixed;top:180px;right:0;z-index:999;}
+#floatDivBoxs .floatDtt{width:100%;height:45px;line-height:45px; background:#f08326;color:#fff;font-size:18px;text-indent:22px;position:relative;}
+#floatDivBoxs .floatDqq{padding:0 14px;}
+#floatDivBoxs .floatDqq li{height:45px;line-height:45px;font-size:15px;border-bottom:1px solid #e3e3e3; padding:0 0 0 50px;}
+#floatDivBoxs .floatDtxt{font-size:18px;color:#333;padding:12px 14px;}
+#floatDivBoxs .floatDtel{padding:0 0 15px 10px;}
+#floatDivBoxs .floatDtel img{display:block;}
+#floatDivBoxs .floatDbg{width:100%;height:20px;background:url(../images/online_botbg.jpg) no-repeat;/*box-shadow:-2px 0 3px rgba(0,0,0,0.25);*/}
+.floatShadow{}
+#rightArrow{width:35px; height:125px;border-radius:10px 0 0 10px; text-align:center; color:#fff;background: linear-gradient(rgb(245, 190, 43), rgb(229, 94, 25));/*height:45px;background:url(../images/online_arrow.jpg) no-repeat;*/position:fixed;top:250px;right:200px;z-index:999; font-size:2rem}
+#rightArrow a{display:block;height:125px; color:#FFF;}
+
+
+.tyoyu{
+	width:98%;
+	margin:20px auto 0px auto;
+	background: linear-gradient(rgb(78, 60, 10), rgb(115, 73, 11));
+	color:#fece00;
+	line-height:30px;
+	overflow:hidden;
+	}
+.tyoyu span{
+	display:block;
+	width:33.3%;
+	float:left;
+	text-align:center;
+	}
+.floatShadow ul{
+	background:#fff;
+	height:270px;
+	width:98%;
+	margin:0 auto;
+	} 
+	
+.floatShadow ul li{
+	overflow:hidden;
+	padding:8px 5px;
+	text-align:center;
+	border-bottom:solid 1px #e8e8e8;
+	}	
+	
+.floatShadow ul li strong{
+	font-style:normal;
+	display: inline-block;
+	float:left;
+	width:15%;
+	font-size:0.7rem;
+	font-weight:normal;
+	}	
+	
+.floatShadow ul li strong img{
+	width:80%;
+	vertical-align:middle;
+	}	
+.floatShadow ul li strong.at{
+	width:35%; 
+	background: #5656ff94; 
+	line-height:18px; 
+	color:#fff;
+	border-radius:10px;
+	text-shadow:0px 2px 2px #5858c7;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	}	
+.floatShadow ul li strong.ab{
+	width:35%;
+	color:#fd5300;
+	}	
+	
+.floatShadow ul li strong.atf{
+	width:35%; 
+	background: #bfbfbf94; 
+	line-height:18px; 
+	color:#545454;
+	border-radius:10px;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	overflow:hidden;
+	}	
+	
+
+.floatShadow ul label{
+	text-align:center;
+	display:block;
+	padding-top:5px;
+	}
+.floatShadow ul label a{
+	margin:0px 6px;
+	}
+
+
+
+
+
+
+#floaB{width:200px;background: url(../images/gh.png) no-repeat; background-size:100% 100%;position:fixed;top:180px; left:0;z-index:999;}
+#floaB .floatDtt{width:100%;height:45px;line-height:45px; background:#f08326;color:#fff;font-size:18px;text-indent:22px;position:relative;}
+#floaB .floatDqq{padding:0 14px;}
+#floaB .floatDqq li{height:45px;line-height:45px;font-size:15px;border-bottom:1px solid #e3e3e3; padding:0 0 0 50px;}
+#floaB .floatDtxt{font-size:18px;color:#333;padding:12px 14px;}
+#floaB .floatDtel{padding:0 0 15px 10px;}
+#floaB .floatDtel img{display:block;}
+#floaB .floatDbg{width:100%;height:20px;background:url(../images/online_botbg.jpg) no-repeat;/*box-shadow:-2px 0 3px rgba(0,0,0,0.25);*/}
+.floaB{}
+#righthk{width:35px;border-radius:0 10px 10px 0; text-align:center; color:#fff;background: linear-gradient(rgb(245, 190, 43), rgb(229, 94, 25));position:fixed;top:250px;left:200px;z-index:999; font-size:2rem}
+#righthk a{display:block;color:#FFF;}
+
+
+.tyoyu{
+	width:98%;
+	margin:20px auto 0px auto;
+	background: linear-gradient(rgb(78, 60, 10), rgb(115, 73, 11));
+	color:#fece00;
+	line-height:30px;
+	overflow:hidden;
+	}
+.tyoyu span{
+	display:block;
+	width:33.3%;
+	float:left;
+	text-align:center;
+	}
+.flhadow ul{
+	background:#fff;
+	width:98%;
+	margin:0 auto;
+	} 
+	
+.flhadow ul li{
+	overflow:hidden;
+	padding:8px 5px;
+	text-align:center;
+	border-bottom:solid 1px #e8e8e8;
+	}	
+	
+.flhadow ul li p{
+	float:left;
+	width:33.3%;
+	}
+	
+
+.flhadow ul label{
+	text-align:center;
+	display:block;
+	padding-top:5px;
+	}
+.flhadow ul label a{
+	margin:0px 6px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	
