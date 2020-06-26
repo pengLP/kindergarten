@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42b114af-b5a8-4948-b36d-d194ff821df8" name="Default Changelist" comment="" />
+    <list default="true" id="32671716-4fe7-49ee-b09e-cde8884694ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/mapper/KindergartenMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/mapper/SuccessUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/SuccessUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/KindergartenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/SuccessUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/KindergartenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/SuccessUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updatePass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kindergarten.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/Kindergarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/kindergarten.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/po/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="kindergarten" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -16,37 +51,46 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\java\.m2\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:/java/apache-maven-3.6.3" />
         <option name="userSettingsFile" value="D:\java\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1dg2xZix5bCWnRje8v9FIyrXEsa" />
+  <component name="ProjectId" id="1dqGyBnACKJCkzH66lc8kMkpM86" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tool" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.5132353" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gitCode\kindergarten\src\main\resources\templates" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.kindergarten" />
+      <recent name="com.kindergarten.mapper" />
+      <recent name="com.kindergarten.service.impl" />
+      <recent name="com.kindergarten.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\kindergarten\src\main\resources\static" />
-      <recent name="D:\java\kindergarten\src\main\resources" />
+      <recent name="D:\gitCode\kindergarten\src\main\resources" />
+      <recent name="D:\gitCode\kindergarten\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -62,40 +106,57 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="KindergartenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="KindergartenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="kindergarten" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.kindergarten.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kindergarten.KindergartenApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.KindergartenApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="42b114af-b5a8-4948-b36d-d194ff821df8" name="Default Changelist" comment="" />
-      <created>1592832662981</created>
+      <changelist id="32671716-4fe7-49ee-b09e-cde8884694ec" name="Default Changelist" comment="" />
+      <created>1593145461083</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592832662981</updated>
-      <workItem from="1592832664740" duration="7817000" />
+      <updated>1593145461083</updated>
+      <workItem from="1593145462453" duration="14269000" />
+      <workItem from="1593162280841" duration="1614000" />
+      <workItem from="1593164814955" duration="629000" />
+      <workItem from="1593166262956" duration="460000" />
+      <workItem from="1593166865073" duration="1196000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/Desktop/Register/WEB-INF/jsp/apply.jsp</url>
+          <line>72</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

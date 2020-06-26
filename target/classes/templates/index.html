@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>幼儿园报名系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 25px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;">用户报名</div>
+<div class="container">
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <form role="form" action="/bm" enctype="multipart/form-data" method="post" novalidate id="form">
+                <input type="hidden" name="id" th:value="${session.user.id}" readonly="true"/>
+                <div class="form-group">
+                    <label for="name"><span style="color: red;">*</span>儿童姓名：</label><input type="text" class="form-control" id="name" name="name"  required="required" th:value="${session.user.name}" readonly="true"/>
+                    <div class="invalid-feedback"><small>请检查儿童姓名是否正确！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="type">身份证号码</label><input type="text" class="form-control" id="type" required="required"  name="type"  th:value="${session.user.cardNum}" readonly="true"/>
+                    <div class="invalid-feedback"><small>请检查身份证号格式！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="cardNum">报名班级</label><input type="text" class="form-control" id="cardNum" required="required"  name="cardNum" th:value="${session.user.type}" readonly="true"/>
+                    <div class="invalid-feedback"><small>请检查报名班级！</small></div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">请填写以下文字：<span style="color: red;">本人承诺以上内容及所附其他材料的真实性如有虚假由此引发的一切后果由本人承担</span></label>
+                    <div class="col-sm-10">
+                        <input type="text"  pattern="本人承诺以上内容及所附其他材料的真实性如有虚假由此引发的一切后果由本人承担" class="form-control" id="check" placeholder="" required="required" >
+                    </div>
+                    <div class="invalid-feedback"><small>请填写以上文字！</small></div>
+                </div>
+
+                <div class="form-group">
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-block"  th:if="${session.kindergarten.status == '已开始'}">报名</button>
+                    <button type="button" class="btn btn-lg btn-block" onclick="toInfo()">查看个人信息</button>
+                    <button type="button" class="btn btn-lg btn-block" onclick="updatePass()">修改密码</button>
+                </div>
+                <div><p>报名前请核实个人信息是否填写有误，首次登录请修改密码</p></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="<%=path%>/bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+    function toRegister() {
+        window.location.href = "/toRegister";
+    }
+
+    function toInfo() {
+        window.location.href = "/getUserInfo";
+    }
+
+    function updatePass() {
+        window.location.href = "/updatePass";
+    }
+    $(function () {
+        $("#form").submit(function(event){
+            f=$(this)
+            if(f[0].checkValidity()===false){
+                event.preventDefault()
+                event.stopPropagation()
+                f.addClass("was-validated")
+                return;
+            }
+        })
+    })
+</script>
+</body>
+</html>

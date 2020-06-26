@@ -1,6 +1,7 @@
 package com.kindergarten.po;
 
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import java.util.Date;
 
 public class User {
@@ -36,7 +37,10 @@ public class User {
     private String type;
     private Date bmtime;
     private String status;
-    private String kName;
+    private Integer kId;
+
+    @Transient
+    private Kindergarten kindergarten;
 
     public Integer getId() {
         return id;
@@ -278,48 +282,56 @@ public class User {
         this.status = status;
     }
 
-    public String getkName() {
-        return kName;
+    public Integer getkId() {
+        return kId;
     }
 
-    public void setkName(String kName) {
-        this.kName = kName;
+    public void setkId(Integer kId) {
+        this.kId = kId;
+    }
+
+    public Kindergarten getKindergarten() {
+        return kindergarten;
+    }
+
+    public void setKindergarten(Kindergarten kindergarten) {
+        this.kindergarten = kindergarten;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", name='" + name + '\n' +
-                ", sex='" + sex + '\n' +
-                ", password='" + password + '\n' +
-                ", nation='" + nation + '\n' +
-                ", cardNum='" + cardNum + '\n' +
-                ", cardZPic='" + cardZPic + '\n' +
-                ", cardFPic='" + cardFPic + '\n' +
-                ", address='" + address + '\n' +
-                ", hksyPic='" + hksyPic + '\n' +
-                ", hkhzPic='" + hkhzPic + '\n' +
-                ", hketbryPic='" + hketbryPic + '\n' +
-                ", etyfjzz='" + etyfjzz + '\n' +
-                ", fczPic='" + fczPic + '\n' +
-                ", jzbs='" + jzbs + '\n' +
-                ", etbs='" + etbs + '\n' +
-                ", fName='" + fName + '\n' +
-                ", mName='" + mName + '\n' +
+                ", name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", password='" + password + '\'' +
+                ", nation='" + nation + '\'' +
+                ", cardNum='" + cardNum + '\'' +
+                ", cardZPic='" + cardZPic + '\'' +
+                ", cardFPic='" + cardFPic + '\'' +
+                ", address='" + address + '\'' +
+                ", hksyPic='" + hksyPic + '\'' +
+                ", hkhzPic='" + hkhzPic + '\'' +
+                ", hketbryPic='" + hketbryPic + '\'' +
+                ", etyfjzz='" + etyfjzz + '\'' +
+                ", fczPic='" + fczPic + '\'' +
+                ", jzbs='" + jzbs + '\'' +
+                ", etbs='" + etbs + '\'' +
+                ", fName='" + fName + '\'' +
+                ", mName='" + mName + '\'' +
                 ", fAge=" + fAge +
                 ", mAge=" + mAge +
-                ", hyqk='" + hyqk + '\n' +
-                ", mTel='" + mTel + '\n' +
-                ", fTel='" + fTel + '\n' +
-                ", fWork='" + fWork + '\n' +
-                ", mWork='" + mWork + '\n' +
+                ", hyqk='" + hyqk + '\'' +
+                ", mTel='" + mTel + '\'' +
+                ", fTel='" + fTel + '\'' +
+                ", fWork='" + fWork + '\'' +
+                ", mWork='" + mWork + '\'' +
                 ", regtime=" + regtime +
-                ", gmy='" + gmy + '\n' +
-                ", type='" + type + '\n' +
+                ", gmy='" + gmy + '\'' +
+                ", type='" + type + '\'' +
                 ", bmtime=" + bmtime +
-                ", status='" + status + '\n' +
-                ", kName='" + kName + '\n' +
+                ", status='" + status + '\'' +
+                ", kId=" + kId +
                 '}';
     }
 }

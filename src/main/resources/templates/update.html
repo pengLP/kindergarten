@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>个人信息确认</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入 Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 25px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;">用户信息核查</div>
+<div class="container">
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <form role="form" action="/register" enctype="multipart/form-data" method="post" novalidate id="form">
+                <div><span style="color: red;" th:text="'请核实个人信息是否正确'"></span></div>
+                <div class="form-group">
+                    <label for="name"><span style="color: red;">*</span>儿童姓名</label><input type="text" class="form-control" id="name" name="name" readonly="true" th:value="${session.user.name}"/>
+                    <div class="invalid-feedback"><small>儿童姓名不能为空！</small></div>
+                </div>
+                <div class="form-group">
+                    <label for="name"><span style="color: red;">*</span>性别</label><input type="text" class="form-control" id="sex" name="sex" readonly="true" th:value="${session.user.sex}"/>
+                </div>
+                <div class="form-group">
+                    <label for="name"><span style="color: red;">*</span>民族</label><input type="text" class="form-control" id="nation" name="nation" readonly="true" th:value="${session.user.nation}"/>
+                </div>
+                <div class="form-group">
+                    <label for="cardNum">身份证号码</label><input type="text" class="form-control" id="cardNum" required="required"  name="cardNum"  th:value="${session.user.cardNum}" pattern=" /(^\d{15}$)|(^\d{17}(\d|X|x)$)|(^\d{18}$)/" readonly="true"/>
+                    <div class="invalid-feedback"><small>身份证号格式错误！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">户口所在地地址</label><input type="text" class="form-control" id="address"  required="required" name="address" th:value="${session.user.address}"  readonly="true"/>
+                    <div class="invalid-feedback"><small>地址不能为空！</small></div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="jzbs">家族病史</label><input type="text" class="form-control" id="jzbs" required="required"  name="jzbs"  th:value="${session.user.jzbs}" readonly="true"/>
+                    <div class="invalid-feedback"><small>家庭病史不能为空，没有请填无！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jzbs">是否有过敏源</label><input type="text" class="form-control" id="gmy" required="required"  name="gmy"  th:value="${session.user.gmy}" readonly="true"/>
+                    <div class="invalid-feedback"><small>过敏原不能为空，没有请填无！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="etbs">儿童身体状况</label><input type="text" class="form-control" id="etbs" required="required"  name="etbs" th:value="${session.user.etbs}" readonly="true"/>
+                    <div class="invalid-feedback"><small>儿童身体状况不能为空！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fName">父亲姓名</label><input type="text" class="form-control" id="fName" required="required"  name="fName" th:value="${session.user.fName}"  readonly="true"/>
+                    <div class="invalid-feedback"><small>请填写父亲姓名！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mName">母亲姓名</label><input type="text" class="form-control" id="mName" required="required"  name="mName"  th:value="${session.user.mName}" readonly="true"/>
+                    <div class="invalid-feedback"><small>请填写父亲姓名！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fAge">父亲年龄</label><input type="text" class="form-control" id="fAge"  required="required" name="fAge"  th:value="${session.user.fAge}" pattern="^(?:[1-9]?\d|100)$" readonly="true"/>
+                    <div class="invalid-feedback"><small>请正确填写父亲年龄！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mAge">母亲年龄</label><input type="text" class="form-control" id="mAge" required="required"  name="mAge"  th:value="${session.user.mAge}" pattern="^(?:[1-9]?\d|100)$" readonly="true"/>
+                    <div class="invalid-feedback"><small>请正确填写母亲年龄！</small></div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="fTel">父亲联系方式</label><input type="text" class="form-control" id="fTel" name="fTel"  required="required"  th:value="${session.user.fTel}" pattern="1[34578]\d{9}$" readonly="true"/>
+                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mTel">母亲联系方式</label><input type="text" class="form-control" id="mTel" name="mTel"  required="required" th:value="${session.user.mTel}"  pattern="1[34578]\d{9}$" readonly="true"/>
+                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fWork">父亲职业</label><input type="text" class="form-control" id="fWork" name="fWork"  required="required"  th:value="${session.user.fWork}" readonly="true"/>
+                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="mWork">母亲职业</label><input type="text" class="form-control" id="mWork" name="mWork"  required="required"  th:value="${session.user.mWork}" readonly="true"/>
+                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="kId">报名的幼儿园：</label><input type="text" class="form-control" id="kId" th:value="${session.kindergarten.name}" readonly="true"/>
+                </div>
+
+                <!-- <div class="checkbox">
+                    <label><input type="checkbox" />Check me out</label>
+                </div>
+                 -->
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="backIndex()">返回</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+
+    function backIndex() {
+        window.location.href = "/index";
+    }
+    $(function () {
+        $("#form").submit(function(event){
+            f=$(this)
+            if(f[0].checkValidity()===false){
+                event.preventDefault()
+                event.stopPropagation()
+                f.addClass("was-validated")
+                return;
+            }
+        })
+    })
+</script>
+</body>
+</html>

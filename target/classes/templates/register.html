@@ -21,7 +21,7 @@
     <div class="row clearfix">
         <div class="col-md-12 column">
             <form role="form" action="/register" enctype="multipart/form-data" method="post" novalidate id="form">
-                <div><span style="color: red;">目前为注册阶段，尚未开放报名，报名开放时间请关注哈尔滨市幼儿师范附属幼儿园微信公众平台,请各位家长认真填写并核实以下信息，注册后无法修改</span></div>
+                <div><span style="color: red;" th:text="'目前为注册阶段，尚未开放报名，报名开放时间请关注'+${session.kindergarten.name}+'微信公众平台,请各位家长认真填写并核实以下信息，注册后无法修改'"></span></div>
                 <div class="form-group">
                     <label for="name"><span style="color: red;">*</span>儿童姓名</label><input type="text" class="form-control" id="name" name="name"  required="required" />
                     <div class="invalid-feedback"><small>儿童姓名不能为空！</small></div>
@@ -201,7 +201,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="mWork">报名的幼儿园：</label><input type="text" class="form-control" id="kName" name="kName" value="哈尔滨市幼儿师范附属幼儿园" readonly="true"/>
+                    <label for="kId">报名的幼儿园：</label><input type="text" class="form-control" id="kId" th:value="${session.kindergarten.name}" readonly="true"/><input type="hidden" name="kId" th:value="${session.kindergarten.id}" readonly="true"/>
                     <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
                 </div>
 
