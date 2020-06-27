@@ -9,5 +9,5 @@ public interface KindergartenService {
 
     Kindergarten getKindergartenById(Kindergarten kindergarten);
     List<Kindergarten> getAllKindergarten();
-
+    int updateKindergarten(Kindergarten kindergarten);
 }

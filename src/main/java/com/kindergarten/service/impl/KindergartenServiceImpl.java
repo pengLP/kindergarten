@@ -26,4 +26,9 @@ public class KindergartenServiceImpl implements KindergartenService {
     public List<Kindergarten> getAllKindergarten() {
         return kindergartenMapper.selectAll();
     }
+
+    @Override
+    public int updateKindergarten(Kindergarten kindergarten) {
+        return kindergartenMapper.updateByPrimaryKey(kindergarten);
+    }
 }

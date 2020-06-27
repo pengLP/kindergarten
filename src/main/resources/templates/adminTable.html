@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+</head>
+<body>
+
+<h1 style="text-align: center;margin: 80px;">后台管理系统</h1>
+<hr>
+<div class="container">
+    <form action="/updateKinder">
+        <input type="hidden" name="id" th:value="${kindergarten.id}">
+    <div class="row clearfix">
+        <div class="col-md-3 column">
+            <div class="form-group">
+                <label for="name">小班人数</label>
+                <input type="text" class="form-control" id="name" placeholder="请输入名称" th:value="${kindergarten.xbNum}" name="xbNum">
+            </div>
+        </div>
+
+        <div class="col-md-3 column">
+            <div class="form-group">
+                <label for="nam1e">托班人数</label>
+                <input type="text" class="form-control" id="nam1e" placeholder="请输入名称" th:value="${kindergarten.tbNum}" name="tbNum">
+            </div>
+        </div>
+
+        <div class="col-md-3 column">
+            <div class="form-group">
+                <label for="nam2e">大班人数</label>
+                <input type="text" class="form-control" id="nam2e" placeholder="请输入名称" th:value="${kindergarten.dbNum}" name="dbNum">
+            </div>
+        </div>
+
+        <div class="col-md-3 column">
+            <div class="form-group">
+                <label for="nam3e">总人数</label>
+                <input type="text" class="form-control" id="nam3e" placeholder="请输入名称" th:value="${kindergarten.allNum}" name="allNum">
+            </div>
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-md-3 column">
+            <div class="form-group">
+                <label for="name3">报名开始时间</label>
+                <input type="text" class="form-control" id="name3" placeholder="请输入名称"  th:value="${kindergarten.startTime}" name="startTime">
+            </div>
+        </div>
+
+        <div class="col-md-3 column">
+            <div class="form-group">
+                <label for="nam1e4">报到时间</label>
+                <input type="text" class="form-control" id="nam1e4" placeholder="请输入名称" th:value="${kindergarten.bdTime}" name="bdTime">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">修改</button>
+        </div>
+
+        <div class="col-md-3 column" th:if="${kindergarten.status == '未开始'}">
+            <div class="form-group">
+                <a class="btn"  style="margin: 20px;" th:href="@{'/updateKindergarten?id='+${kindergarten.id}+'&status='+'已开始'}">开始报名</a>
+            </div>
+        </div>
+
+        <div class="col-md-3 column" th:if="${kindergarten.status == '已开始'}">
+            <div class="form-group">
+                <a class="btn"  style="margin: 20px;" th:href="@{'/updateKindergarten?id='+${kindergarten.id}+'&status='+'未开始'}">结束报名</a>
+            </div>
+        </div>
+
+    </div>
+    </form>
+    <table id="example" class="display" style="width:100%">
+        <thead>
+        <tr>
+            <th>学生姓名</th>
+            <th>性别</th>
+            <th>身份证号</th>
+            <th>幼儿园</th>
+            <th>班级</th>
+            <th>是否报名</th><!--
+            <th>操作</th>-->
+        </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user:${users}">
+                <td th:text="${user.name}"></td>
+                <td th:text="${user.sex}"></td>
+                <td th:text="${user.cardNum}"></td>
+                <td th:text="${user.kindergarten.name}"></td>
+                <td th:text="${user.type}"></td>
+                <td th:text="${user.status}"></td><!--
+                <td><a th:href="@{'userDetail?id='+${user.id}}"> 查看</a></td>-->
+            </tr>
+        </tfoot>
+    </table>
+
+
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            "pagingType": "full_numbers"
+        } );
+    } );
+</script>
+</html>

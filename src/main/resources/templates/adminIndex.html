@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<h1 style="text-align: center;margin: 80px;">后台管理系统</h1>
+<hr>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <a class="btn btn-primary" th:each="kindergarten:${kindergartens}" th:text="${kindergarten.name}"  th:href="@{'adminUserList?id='+${kindergarten.id}}" style="margin: 20px;">按钮</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

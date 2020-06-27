@@ -2,37 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32671716-4fe7-49ee-b09e-cde8884694ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/mapper/KindergartenMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/mapper/SuccessUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/SuccessUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/KindergartenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/SuccessUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/KindergartenServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/SuccessUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updatePass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adminIndex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/adminTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kindergarten.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/Kindergarten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/Kindergarten.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/Kindergarten.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/po/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/KindergartenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/KindergartenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/KindergartenServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kindergarten/service/impl/KindergartenServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/kindergarten.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updatePass.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updatePass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/15931670171921.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/po/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/po/Kindergarten.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/po/Kindergarten.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/service/KindergartenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/service/KindergartenService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kindergarten/service/impl/KindergartenServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kindergarten/service/impl/KindergartenServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/result.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/updatePass.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updatePass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kindergarten-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/kindergarten-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kindergarten-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/kindergarten-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,14 +44,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="kindergarten" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -73,23 +91,23 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="D:/java/tool" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\gitCode\kindergarten\src\main\resources\templates" />
+      <recent name="D:\gitCode\kindergarten\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.kindergarten.mapper" />
       <recent name="com.kindergarten.service.impl" />
       <recent name="com.kindergarten.service" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\gitCode\kindergarten\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\gitCode\kindergarten\src\main\resources\templates" />
     </key>
   </component>
@@ -129,6 +147,9 @@
       <workItem from="1593164814955" duration="629000" />
       <workItem from="1593166262956" duration="460000" />
       <workItem from="1593166865073" duration="1196000" />
+      <workItem from="1593233041029" duration="18000" />
+      <workItem from="1593243773259" duration="11349000" />
+      <workItem from="1593260291951" duration="3311000" />
     </task>
     <servers />
   </component>

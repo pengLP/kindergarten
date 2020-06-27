@@ -9,8 +9,11 @@ public class Kindergarten {
     private String name;
     private Integer xbNum;
     private Integer dbNum;
+    private Integer tbNum;
     private String status;
     private String bdTime;
+    private Integer allNum;
+    private String startTime;
 
     public Integer getId() {
         return id;
@@ -58,5 +61,41 @@ public class Kindergarten {
 
     public void setBdTime(String bdTime) {
         this.bdTime = bdTime;
+    }
+
+    public Integer getTbNum() {
+        return tbNum;
+    }
+
+    public void setTbNum(Integer tbNum) {
+        this.tbNum = tbNum;
+    }
+
+    public Integer getAllNum() {
+        return allNum;
+    }
+
+    public void setAllNum(Integer allNum) {
+        this.allNum = allNum;
+    }
+
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    @Override
+    public String toString() {
+        return "Kindergarten{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", xbNum=" + xbNum +
+                ", dbNum=" + dbNum +
+                ", status='" + status + '\'' +
+                ", bdTime='" + bdTime + '\'' +
+                '}';
     }
 }

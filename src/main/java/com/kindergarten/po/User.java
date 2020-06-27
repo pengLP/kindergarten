@@ -38,6 +38,7 @@ public class User {
     private Date bmtime;
     private String status;
     private Integer kId;
+    private Integer kdsb;
 
     @Transient
     private Kindergarten kindergarten;
@@ -296,6 +297,14 @@ public class User {
 
     public void setKindergarten(Kindergarten kindergarten) {
         this.kindergarten = kindergarten;
+    }
+
+    public Integer getKdsb() {
+        return kdsb;
+    }
+
+    public void setKdsb(Integer kdsb) {
+        this.kdsb = kdsb;
     }
 
     @Override

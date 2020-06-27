@@ -9,6 +9,7 @@ com\kindergarten\service\KindergartenService.class
 com\kindergarten\mapper\SuccessUserMapper.class
 com\kindergarten\service\UserService.class
 com\kindergarten\po\Kindergarten.class
+com\kindergarten\controller\AdminController.class
 com\kindergarten\service\impl\UserServiceImpl.class
 com\kindergarten\service\SuccessUserService.class
 com\kindergarten\mapper\UserMapper.class
