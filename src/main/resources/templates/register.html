@@ -15,14 +15,14 @@
 </head>
 <body>
 
-<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 18px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;" th:text="${session.kindergarten.name}+'报名系统'"></div>
+<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 18px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;" th:text="${session.kindergarten.name}+'登记系统'"></div>
 
 <div class="container">
 
     <div class="row clearfix">
         <div class="col-md-12 column">
             <form role="form" action="/register" enctype="multipart/form-data" method="post" novalidate id="form">
-                <div><span style="color: red;" th:text="'目前为注册阶段，尚未开放报名，报名开放时间请关注'+${session.kindergarten.name}+'微信公众平台,请各位家长认真填写并核实以下信息，注册后无法修改'"></span></div>
+                <div><span style="color: red;" th:text="'请各位家长认真填写并核实以下信息，登记后无法修改'"></span></div>
                 <div class="form-group">
                     <label for="name"><span style="color: red;">*</span>儿童姓名</label><input type="text" class="form-control" id="name" name="name"  required="required" />
                     <div class="invalid-feedback"><small>儿童姓名不能为空！</small></div>
