@@ -41,9 +41,10 @@ public class AdminController {
         return "adminTable";
     }
 
-    @RequestMapping("updateKindergarten")
+    @RequestMapping("updateKindergarZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzAAAAza")
     public String updateKindergarten(Kindergarten kindergarten) {
         Kindergarten ki = new Kindergarten();
+        System.out.println("======");
         ki.setId(kindergarten.getId());
         Kindergarten k = kindergartenService.getKindergartenById(ki);
         k.setStatus(kindergarten.getStatus());

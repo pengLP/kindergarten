@@ -121,17 +121,8 @@ public class UserController {
             } catch (ParseException var15) {
                 var15.printStackTrace();
             }
-            //我的更改
-            String address = user.getAddress();
-            if (address.contains("南岗区"))
-            {
-            }
-            else {
-                model.addAttribute("msg", "户口地址不符合注册条件，无法注册");
-                return "error";
-            }
 
-            //更改结束
+
             List<String> names = new ArrayList();
             String p = "";
             String realPath;

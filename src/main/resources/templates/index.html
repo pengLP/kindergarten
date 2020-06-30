@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>幼儿园登记系统</title>
+    <title>幼儿园报名系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 引入 Bootstrap -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 18px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;" th:text="${session.kindergarten.name}+'登记系统'"></div>
+<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 18px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;" th:text="${session.kindergarten.name}+'报名系统'"></div>
 
 <div class="container">
 
@@ -53,9 +53,9 @@
                     <button type="button" class="btn btn-danger btn-lg btn-block" onclick="updatePass()">修改密码</button>
                 </div>
                 <div>
-                    <!--<p th:if="${session.kindergarten.status == '未开始'}" th:text="'报名将于'+ ${session.kindergarten.startTime} + '开始'"></p>-->
+                    <p th:if="${session.kindergarten.status == '未开始'}" th:text="'报名将于'+ ${session.kindergarten.startTime} + '开始'"></p>
                 </div>
-                <div><!--<p>报名前请核实个人信息是否填写有误，首次登录请修改密码</p>--></div>
+                <div><p>报名前请核实个人信息是否填写有误，首次登录请修改密码</p></div>
             </form>
         </div>
     </div>
