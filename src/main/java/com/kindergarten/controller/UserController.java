@@ -6,6 +6,7 @@ import com.kindergarten.po.User;
 import com.kindergarten.service.KindergartenService;
 import com.kindergarten.service.SuccessUserService;
 import com.kindergarten.service.UserService;
+import org.apache.ibatis.jdbc.Null;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -175,6 +176,12 @@ public class UserController {
         k1.setId(k.getId());
         Kindergarten kindergarten = kindergartenService.getKindergartenById(k1);
         request.getSession().setAttribute("kindergarten", kindergarten);
+        user.setId(kindergarten.getId());
+        if (user == null ||user.getCardNum().length() == 0) {
+            model.addAttribute("msg","错误");
+            return "error";
+        }
+
         List<User> users = userService.getUser(user);
         System.out.println(user);
         if (users.size() > 0) {
