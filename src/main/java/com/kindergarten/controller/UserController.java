@@ -111,7 +111,7 @@ public class UserController {
                 if (isEffectiveDate(date, fmt.parse("2017-07-08"), fmt.parse("2018-01-08"))) {
                     user.setType("托班");
                 } else {
-                    if (!isEffectiveDate(date, fmt.parse("2000-09-01"), fmt.parse("2017-07-28"))) {
+                    if (!isEffectiveDate(date, fmt.parse("2016-09-01"), fmt.parse("2017-07-08"))) {
                         user.setType("拒收");
                         model.addAttribute("msg", "对不起，年龄不到无法报名。感谢您对" + kindergarten.getName() + "的支持！相关详细信息，请关注我园公众微信平台！");
                         return "error";
