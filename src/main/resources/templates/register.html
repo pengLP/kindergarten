@@ -156,49 +156,55 @@
                     <label for="fName">父亲姓名</label><input type="text" class="form-control" id="fName" required="required"  name="fName"/>
                     <div class="invalid-feedback"><small>请填写父亲姓名！</small></div>
                 </div>
-
+				
+				<div class="form-group">
+                    <label for="fAge">父亲年龄</label><input type="text" class="form-control" id="fAge"  required="required" name="fAge" pattern="^(?:[1-9]?\d|100)$"/>
+                    <div class="invalid-feedback"><small>请正确填写父亲年龄！</small></div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="fTel">父亲联系方式</label><input type="text" class="form-control" id="fTel" name="fTel"  required="required" pattern="1[34578]\d{9}$"/>
+                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
+				<div class="form-group">
+                    <label for="fWork">父亲职业</label><input type="text" class="form-control" id="fWork" name="fWork"  required="required"/>
+                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
                 <div class="form-group">
                     <label for="mName">母亲姓名</label><input type="text" class="form-control" id="mName" required="required"  name="mName"/>
                     <div class="invalid-feedback"><small>请填写父亲姓名！</small></div>
                 </div>
 
-                <div class="form-group">
-                    <label for="fAge">父亲年龄</label><input type="text" class="form-control" id="fAge"  required="required" name="fAge" pattern="^(?:[1-9]?\d|100)$"/>
-                    <div class="invalid-feedback"><small>请正确填写父亲年龄！</small></div>
-                </div>
+                
 
                 <div class="form-group">
                     <label for="mAge">母亲年龄</label><input type="text" class="form-control" id="mAge" required="required"  name="mAge" pattern="^(?:[1-9]?\d|100)$"/>
                     <div class="invalid-feedback"><small>请正确填写母亲年龄！</small></div>
                 </div>
 
-                <div class="form-group">
-                    <label for="hyqk">婚姻情况</label>
-                    <select name="hyqk" class="form-control" id="hyqk">
-                        <option value="已婚">已婚</option>
-                        <option value="离婚">离婚</option>
-                        <option value="丧偶">丧偶</option>
-                    </select>
-                </div>
+                
 
-                <div class="form-group">
-                    <label for="fTel">父亲联系方式</label><input type="text" class="form-control" id="fTel" name="fTel"  required="required" pattern="1[34578]\d{9}$"/>
-                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
-                </div>
+                
 
                 <div class="form-group">
                     <label for="mTel">母亲联系方式</label><input type="text" class="form-control" id="mTel" name="mTel"  required="required" pattern="1[34578]\d{9}$"/>
                     <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
                 </div>
 
-                <div class="form-group">
-                    <label for="fWork">父亲职业</label><input type="text" class="form-control" id="fWork" name="fWork"  required="required"/>
-                    <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
-                </div>
+                
 
                 <div class="form-group">
                     <label for="mWork">母亲职业</label><input type="text" class="form-control" id="mWork" name="mWork"  required="required"/>
                     <div class="invalid-feedback"><small>请正确填写手机格式！</small></div>
+                </div>
+				
+				<div class="form-group">
+                    <label for="hyqk">婚姻情况</label>
+                    <select name="hyqk" class="form-control" id="hyqk">
+                        <option value="已婚">已婚</option>
+                        <option value="离婚">离婚</option>
+                        <option value="丧偶">丧偶</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
