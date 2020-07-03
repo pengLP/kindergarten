@@ -111,19 +111,32 @@ public class UserController {
                 System.out.println(date);
                 if (isEffectiveDate(date, fmt.parse("2017-09-01"), fmt.parse("2018-02-28"))) {
                     user.setType("托班");
-                } else {
-                    if (!isEffectiveDate(date, fmt.parse("2016-09-01"), fmt.parse("2017-08-31"))) {
-                        user.setType("拒收");
-                        model.addAttribute("msg", "对不起，年龄不到无法报名。感谢您对" + kindergarten.getName() + "的支持！相关详细信息，请关注我园公众微信平台！");
-                        return "error";
-                    }
+                }
+                else if (isEffectiveDate(date, fmt.parse("2016-09-01"), fmt.parse("2017-08-31"))){
                     user.setType("小班");
+                }
+                else if (isEffectiveDate(date, fmt.parse("2014-08-31"), fmt.parse("2015-09-01"))){
+                    user.setType("大班");
+                }
+                else {
+                    user.setType("拒收");
+                    model.addAttribute("msg", "对不起，年龄不到无法报名。感谢您对" + kindergarten.getName() + "的支持！相关详细信息，请关注我园公众微信平台！");
+                    return "error";
                 }
             } catch (ParseException var15) {
                 var15.printStackTrace();
             }
+            //我的更改
+            String address = user.getAddress();
+            if (address.contains("南岗区"))
+            {
+            }
+            else {
+                model.addAttribute("msg", "户口地址不符合注册条件，无法注册");
+                return "error";
+            }
 
-
+            //更改结束
             List<String> names = new ArrayList();
             String p = "";
             String realPath;
@@ -178,7 +191,7 @@ public class UserController {
         request.getSession().setAttribute("kindergarten", kindergarten);
         user.setkId(kindergarten.getId());
         if (user == null ||user.getCardNum().length() == 0) {
-            model.addAttribute("msg","错误");
+            model.addAttribute("msg","请使用uc浏览器");
             return "error";
         }
 
