@@ -115,9 +115,9 @@ public class UserController {
                 else if (isEffectiveDate(date, fmt.parse("2016-09-01"), fmt.parse("2017-08-31"))){
                     user.setType("小班");
                 }
-                else if (isEffectiveDate(date, fmt.parse("2014-08-31"), fmt.parse("2015-09-01"))){
-                    user.setType("大班");
-                }
+//                else if (isEffectiveDate(date, fmt.parse("2014-08-31"), fmt.parse("2015-09-01"))){
+//                    user.setType("大班");
+//                }
                 else {
                     user.setType("拒收");
                     model.addAttribute("msg", "对不起，年龄不到无法报名。感谢您对" + kindergarten.getName() + "的支持！相关详细信息，请关注我园公众微信平台！");
@@ -127,14 +127,14 @@ public class UserController {
                 var15.printStackTrace();
             }
             //我的更改
-            String address = user.getAddress();
-            if (address.contains("南岗区"))
-            {
-            }
-            else {
-                model.addAttribute("msg", "户口地址不符合注册条件，无法注册");
-                return "error";
-            }
+//            String address = user.getAddress();
+//            if (address.contains("南岗区"))
+//            {
+//            }
+//            else {
+//                model.addAttribute("msg", "户口地址不符合注册条件，无法注册");
+//                return "error";
+//            }
 
             //更改结束
             List<String> names = new ArrayList();
@@ -279,18 +279,20 @@ public class UserController {
         successUser.setkId(kindergarten.getId());
         List<SuccessUser> successUsers = successUserService.getSuccessUser(successUser);
         if (successUsers.size() > 0) {
-            u.setStatus("恭喜您，报名成功，请于"+kindergarten.getBdTime()+"来"+kindergarten.getName()+"幼儿园报到");
+            u.setStatus("恭喜您，报名成功，请于"+kindergarten.getBdTime()+"携带以下材料，来"+kindergarten.getName()+"进行确认！！！");
             u.setBmtime(new Date());
             userService.updateUser(u);
-            model.addAttribute("msg" , "恭喜您，报名成功，请于"+kindergarten.getBdTime()+"来"+kindergarten.getName()+"幼儿园报到");
+            model.addAttribute("msg" , "恭喜您，报名成功，请于"+kindergarten.getBdTime()+"携带以下材料，来"+kindergarten.getName()+"进行确认!");
             return "result";
         }
         SuccessUser successUser1 = new SuccessUser();
         successUser1.setType(type);
         successUser1.setkId(kindergarten.getId());
+        //successUsers1得到所有当前k_id和用户班级type的报名成功用户（某班人数）
         List<SuccessUser> successUsers1 = successUserService.getSuccessUser(successUser1);
         SuccessUser successUser2 = new SuccessUser();
         successUser2.setkId(kindergarten.getId());
+        //successUsers2得到所有当前k_id的报名用户（某园总人数）
         List<SuccessUser> successUsers2 = successUserService.getSuccessUser(successUser2);
 
         if (successUsers1.size() >= num || successUsers2.size() >= kindergarten.getAllNum()) {
@@ -300,10 +302,10 @@ public class UserController {
             return "result";
         }else {
             successUserService.addSuccessUser(successUser);
-            u.setStatus("恭喜您，报名成功，请于"+kindergarten.getBdTime()+"来"+kindergarten.getName()+"幼儿园报到");
+            u.setStatus("恭喜您，报名成功，请于"+kindergarten.getBdTime()+"携带以下材料，来"+kindergarten.getName()+"进行确认！！！");
             u.setBmtime(new Date());
             userService.updateUser(u);
-            model.addAttribute("msg" , "恭喜您，报名成功，请于"+kindergarten.getBdTime()+"来"+kindergarten.getName()+"幼儿园报到");
+            model.addAttribute("msg" , "恭喜您，报名成功，请于"+kindergarten.getBdTime()+"携带以下材料，来"+kindergarten.getName()+"进行确认！！！");
             return "result";
         }
     }
